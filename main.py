@@ -191,14 +191,14 @@ questions = {
          "tag": "filler",
         "text": "###### You wanted to go to Cateens? Nah, let's go to Catten Island instead.",
         "image": "images/ami.jpg",
-        "options": {"You have no options to say no to her majesty. You go to Catten Island with her.": "paw_salon"}
+        "options": {"You have no options to say no to Your Majesty. You go to Catten Island with them.": "paw_salon"}
 
     },
     "ami_1_cateens": {
          "tag": "filler",
         "text": "###### You want to go to Catten Island? I kind of want to go to Cateens. Let's go to Cateens instead!.",
         "image":"images/ami.jpg",
-        "options": {"You have no options to say no to her majesty. You go to Cateens with her.": "speakeasy"}
+        "options": {"You have no options to say no to Your Majesty. You go to Cateens with them.": "speakeasy"}
     },
     "yarnball": {
          "tag": "yarnball",
@@ -206,7 +206,7 @@ questions = {
         "image": "images/ai/yarnball.jpg",
         "options": {"You stare at awe at the yarnball and wonder how cats can harvest any type of yarn from it.": "fishing",
                     "You have a strong desire to knit and/or crochet or just to create something artsy when looking at the magnificient yarn ball.": "fishing",
-                    "Why do cats worship yarn so much? What is the point?": "end_yarnball"}
+                    "Why do cats worship yarn so much? What is the point?": "dump"}
     },
     "speakeasy": {
          "tag": "speakeasy",
@@ -250,7 +250,7 @@ questions = {
     },
     "dump": {
          "tag": "dump",
-        "text": "###### You ride the train to reach a dumpster, a treasure trove for cats of Mew York City. The dumpster is full of boxes, rats, leftovers- entertainment and snacks abound.",
+        "text": "###### You and your escort cat then rides the train to reach a dumpster, a treasure trove for cats of Mew York City. The dumpster is full of boxes, rats, leftovers- entertainment and snacks abound.",
         "image": "images/ai/dump.jpg",
         "options": {"You're furious that your escort cat brought you to a dumpster of all places. The Mew York City you read about was all glam and glitter.": "end_dump",
                     "You appreciate the contrast of the glam and glitter you read about Mew York City and the garbage dump you see in reality.": "box_science",
