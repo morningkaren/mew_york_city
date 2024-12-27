@@ -1,43 +1,5 @@
-#import streamlit as st
-
-#st.write("hello world!")
-
-"""
-N- Mewhattan, Cateens 
-C- Catten Island, Cateens
-A- Mewhattan, Brooknyan 
-T- Brooknyan, The Box
-Y- Mewhattan
-K- Catten Island
-1 - The Box
-M- Mewhattan 
-3- Brooknyan, Cateens
-W- Mewhattan, Brooknyan, Cateens
-B- the box, Mewhattan, Cateens 
-
-A day in Mew York City
-Pick a cat and choose your adventure.
-Paul (Y) and Angie (W) and Destiny (M)- Mancattan
-Michelle (B) and Maggie (1)-the box
-Justin(3) and Karen(T) Brooknyan 
-Jon(N) and Sharon(W)- Cateens 
-Jenna(K) and Amy(C)-Catten island
-
-The box- box science kitty school, box science kitty school garbage dump, box science zoo
-
-Cateens- speakeasy, worlds fair yarnball, kitty field 
-
-Brooknyan-  catonah yoga, catnip pizza, catstone houses
-
-Catten island- the mall, paw salon, fishing 
-
-Mewhattan- lion king Broadway show, mewnolia bakery, cattail park*
-
-"""
-
 import streamlit as st
 from PIL import Image
-import datetime
 
 # Define the questions, answers, and logic
 questions = {
@@ -84,7 +46,7 @@ questions = {
         "image": "images/ami.jpg",
         "options": {"You bow and say, 'Cateens, Your Majesty.'": "ami_1_catten_island",
                     "You salute and say 'Catten Island, Your Majesty!'": "ami_1_cateens",
-                    "You curtsy and say that is a pleasure to spend the day with Your Majesty and ask for them to choose a place that they would want to visit instead.": "salon"
+                    "You curtsy and say that is a pleasure to spend the day with Your Majesty and ask for them to choose a place that they would want to visit instead.": "paw_salon"
                     },
                     "tag": "filler"
     
@@ -139,7 +101,7 @@ questions = {
     "shelly_1": {
         "text": """###### You pick the mysteriously ordinary looking gray cat who was winking at you, *Shelly* :dizzy:. *Shelly* says, 'Oh, hello! You picked a witch's apprentice, how lucky! You're in good paws. I can bring you to the Box, Mewhattan, and Cateens. Where would you like to go first?""",
         "image": "images/shelly.jpg",
-        "options": {"You don't like witches, let alone a witch's apprentice. You're afraid of them casting a love spell on you like one witch did in your past, which left you bankrupt. So, you ask Shelly if you can get another cat to escort you.": "shelly_end",
+        "options": {"You don't like witches, let alone a witch's apprentice. You're afraid of them casting a love spell on you like one witch did in your past, which left you bankrupt. So, you ask Shelly if you can get another cat to escort you.": "end_shelly",
                     "Witches aren't real, you say to yourself. You think this cat is high, but whatever. You tell Shelly you want to go to Mewhattan.": "mewnolia",
                     "You tell Shelley to pick a place randomly for you as you don't have a preference." : "mewnolia",
                     "You tell Shelly you want to go to the Box." : "box_science",
@@ -197,8 +159,8 @@ questions = {
         "text": "###### Jana's excitement scares away all the cats except for a demure, white cat with a pink bow. The remaining cat introduces themselves as Ami, a royal cat from the Magikal Kingdom. They politely give you the choices of Catten Island or Cateens to visit. Which do you choose?",
         "image": "images/ami.jpg",
         "options": {"Cateens. The Queens of Mew York City.": "speakeasy",
-                    "Catten Island. Never heard of this place before. Is it even part of Mew York City?": "salon",
-                    "I don't like this cat either. Plz let me leave.": "end"}
+                    "Catten Island. Never heard of this place before. Is it even part of Mew York City?": "paw_salon"}
+                    
     },
     "jus_1_yes": {
          "tag": "speakeasy",
@@ -240,7 +202,7 @@ questions = {
     },
     "yarnball": {
          "tag": "yarnball",
-        "text": "###### Your escort cat brings you to stroll in a large park with the World's Fair Yarnball in Cateeens, the original source of all yarn in Mew York City. The Yarnball has every type, color, material, texture of yarn imaginable for cats in MYC. But, it has been forgotten and is more of a relic now since cats have found other, cheaper ways of extracting yarn from other places outside of MYC. ",
+        "text": "###### For the next stop, your escort cat brings you to stroll in a large park with the World's Fair Yarnball in Cateeens, the original source of all yarn in Mew York City. The Yarnball has every type, color, material, texture of yarn imaginable for cats in MYC. But, it has been forgotten and is more of a relic now since cats have found other, cheaper ways of extracting yarn from other places outside of MYC. ",
         "image": "images/ai/yarnball.jpg",
         "options": {"You stare at awe at the yarnball and wonder how cats can harvest any type of yarn from it.": "fishing",
                     "You have a strong desire to knit and/or crochet or just to create something artsy when looking at the magnificient yarn ball.": "fishing",
@@ -259,16 +221,16 @@ questions = {
          "tag": "mewnolia",
         "text": "###### Your escort cat guides you to the train and you arrive at Mewnolia Bakery in a couple of minutes. The aroma of freshly baked fish pastries and meaty bread hits you as you enter the store. Your escort says it is their treat and asks you to pick something!",
         "image": "images/ai/mewnolia.jpg",
-        "options": {"You choose the bluefin salmon cake with the catnip on top.": "end_mewnolia",
+        "options": {"You choose the bluefin salmon cake with the catnip on top.": "end_toilet",
                     "You pick the classic tuna fish pastry and thank your escort cat for the treat!": "lion",
                     "You pick the cookie called 'If you give a mouse a cookie'. (Later you find out it is made of mouse meat).":"lion",
-                    "You say that you aren't hungry and that you don't like fish. (GASP)": "salon"}
+                    "You say that you aren't hungry and that you don't like fish. (GASP)": "paw_salon"}
 
     },
     "lion": {
          "tag": "lion",
         "text": "###### After the treat, you and your escort cat goes on to the next stop. The Lion King. The legendary musical acted by the cats who have been selected through an arduous auditioning process. They're all on top of the food chain, tapped into their innate predatorial and majestic insticts which many pet cats lost.",
-        "image": "images/ai/lion_king.jpg",
+        "image": "images/ai/lion.jpg",
         "options": {"You are starstruck by the roles the cats were playing in The Lion King. You are so eager to get the lead's paw print that you wander off after the show to find the lead cat.": "end_lion",
                     "You want to digest the show you have just witnessed with your escort cat and ask them to bring you to a place for a drink.":"speakeasy",}
     },
@@ -305,7 +267,7 @@ questions = {
     "paw_salon": {
          "tag": "salon",
         "text": "###### Your escort cat licks their paw three times and you are transported to Catten Island's fanciest paw salon, 'Purrfect Paws'. Here, there are cats taking naps, getting massages, getting brushed and being pampered.",
-        "image": "images/ai/paw_salon.jpg",
+        "image": "images/ai/salon.jpg",
         "options": {"Ah. I could use a spa day too. You ask for a cat massage.": "end_salon",
                     "You're frustrated that your cat brought you to a salon. You just want to explore the city not be in a salon!": "dump"
                     }
@@ -371,14 +333,14 @@ questions = {
     },
     "end_catstones": {
         "tag":"filler",
-        "text": "###### You party the whole day and night at the Catsones, find yourself a cat romantic partner and end up having a sleepover at their place where you both knit blankets until the next day.",
+        "text": "###### You party the whole day and night at the Catstones, find yourself a cat partner and end up having a sleepover at their place where you both knit blankets until the next day.",
         "image": "images/ai/end_catstones.jpg",
         "options": {}
     },
     "kitty_field":{
         "tag":"kitty_field",
         "text": "###### 'I know that the best hot dogs can be found in Kitty Field, home of the Mew York Pets,' your cat says. There is a game today and I got us tickets to go watch it.' You both go to the game and you get your hot-dog. The Pets lost.",
-        "image": "images/ai/kitty_field",
+        "image": "images/ai/kitty_field.jpg",
         "options": {"You think to yourself that you have never seen so many cats gathered in one stadium before. As the only human, you feel a little estranged and you secretly wish there was another human with you now.": "zoo",
                     "I liked eating the hot-dog more than watching the game.": "end_kitty_field",
                     "I wonder where my cat will escort me to next?": "zoo"}
@@ -397,7 +359,7 @@ questions = {
     },
     "end_speakeasy":{
         "tag": "filler",
-        "text": "###### What did you expect with the shots? You pass out and your escort cat calls Totoro's Cat Bus to bring you back home.",
+        "text": "###### What did you expect with the shots? You pass out and your escort cat calls the Cat Bus to bring you back home.",
         "image": "images/ai/end_speakeasy.jpg",
         "options": {}
     },
@@ -439,7 +401,7 @@ questions = {
     "end_shelly": {
          "tag": "filler",
         "text": "###### You never say no to a witch's apprentice. ;)",
-        "image": "images/ai/shelly_end.jpg",
+        "image": "images/shelly.jpg",
         "options": {}
     },
      "end_jus": {
@@ -520,7 +482,7 @@ def main():
         counter = len(unique_tags)
 
         # Display results
-        st.write(f"Tags visited: {set(st.session_state.tag_list)}")
+        #st.write(f"Tags visited: {set(st.session_state.tag_list)}")
         st.write(f"You visited {counter} places out of 15 places in Mew York City! Thanks for playing!")
 
 if __name__ == "__main__":
