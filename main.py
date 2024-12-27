@@ -221,7 +221,7 @@ questions = {
          "tag": "mewnolia",
         "text": "Your escort cat guides you to the train and you arrive at Mewnolia Bakery in a couple of minutes. The aroma of freshly baked fish pastries and meaty bread hits you as you enter the store. Your escort says it is their treat and asks you to pick something!",
         "image": "images/ai/mewnolia.jpg",
-        "options": {"You choose the bluefin salmon cake with the catnip on top.": "end_toilet",
+        "options": {"You choose the bluefin salmon cake with the catnip on top.": "yarnball",
                     "You pick the classic tuna fish pastry and thank your escort cat for the treat!": "lion",
                     "You pick the cookie called 'If you give a mouse a cookie'. (Later you find out it is made of mouse meat).":"lion",
                     "You say that you aren't hungry and that you don't like fish. (GASP)": "paw_salon"}
@@ -320,7 +320,7 @@ questions = {
     "end_pizza": {
         "tag":"filler",
         "text":  "Cat cheese and bird sausage on pizza is a whole other beast. You spend the rest of the day on the toilet.",
-        "image":"images/ai/end_pizza.jpg",
+        "image":"images/ai/end_toilet.jpg",
         "options": {}
     },
     "catstones": {
