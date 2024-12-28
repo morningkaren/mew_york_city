@@ -5,7 +5,7 @@ from PIL import Image
 questions = {
     "start": {
         "tag": "filler",
-        "text": "# **Pick a cat**",
+        "text": "# **Pick a cat to start your adventure.**",
         "image": "images/group_cats.jpg",
         "options": {
             "Pau": "pau_1",
