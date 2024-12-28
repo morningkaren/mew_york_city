@@ -412,8 +412,14 @@ questions = {
     },
      "end_des": {
          "tag": "filler",
-        "text": "###### Des says that you are banned.",
+        "text": "Des says that you are banned.",
         "image": "images/des.jpg",
+        "options": {}
+    },
+    "end_kay": {
+        "tag": "filler",
+        "text": "Kay ends up taking the entire day to untangle themself from the yarn. By the time they are done, they say that they need to rest and without an escort in Mew York City, you aren't able to visit many places.",
+        "image": "images/kay.jpg",
         "options": {}
     }
 
