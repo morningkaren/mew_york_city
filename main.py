@@ -347,8 +347,8 @@ questions = {
     },
     "end_kitty_field": {
         "tag":"filler",
-        "text": "The hot dog was good, but it's not the hot dog you know. You end up glued on the toilet the rest of the day.",
-        "image": "images/ai/end_toilet.jpg",
+        "text": "###### The hot dog was good, but it's not the hot dog you know. You end up glued on the toilet the rest of the day.",
+        "image": "images/ai/end_kitty_field.jpg",
         "options": {}
     },
     "end_fishing": {
@@ -412,14 +412,8 @@ questions = {
     },
      "end_des": {
          "tag": "filler",
-        "text": "Des says that you are banned.",
-        "image": "images/des.jpg",
-        "options": {}
-    },
-    "end_kay": {
-        "tag": "filler",
-        "text": "You watch Kay try to detangle themself and you end up watching them detangle themself for the whole day. You don't end up exploring much of Mew York City.",
-        "image": "images/kay.jpg",
+        "text": "###### Des says that you are banned.",
+        "image": "images/ai/end_des.jpg",
         "options": {}
     }
 
